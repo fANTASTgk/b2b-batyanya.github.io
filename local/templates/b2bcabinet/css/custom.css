@@ -1,0 +1,7 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("");
+?>.sber-responsive {
+  width: 100%;
+  height: auto;
+}<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
