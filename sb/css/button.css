@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'SB Sans Display';
+    src: url('/sb/fonts/SBSansDisplay-Regular.eot');
+    src: url('/sb/fonts/SBSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/sb/fonts/SBSansDisplay-Regular.woff2') format('woff2'),
+        url('/sb/fonts/SBSansDisplay-Regular.woff') format('woff'),
+        url('/sb/fonts/SBSansDisplay-Regular.ttf') format('truetype'),
+        url('/sb/fonts/SBSansDisplay-Regular.svg#SBSansDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SB Sans Interface';
+    src: url('/sb/fonts/SBSansInterface-Semibold.eot');
+    src: url('/sb/fonts/SBSansInterface-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('/sb/fonts/SBSansInterface-Semibold.woff2') format('woff2'),
+        url('/sb/fonts/SBSansInterface-Semibold.woff') format('woff'),
+        url('/sb/fonts/SBSansInterface-Semibold.ttf') format('truetype'),
+        url('/sb/fonts/SBSansInterface-Semibold.svg#SBSansInterface-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SB Sans Interface';
+    src: url('/sb/fonts/SBSansInterface-Regular.eot');
+    src: url('/sb/fonts/SBSansInterface-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/sb/fonts/SBSansInterface-Regular.woff2') format('woff2'),
+        url('/sb/fonts/SBSansInterface-Regular.woff') format('woff'),
+        url('/sb/fonts/SBSansInterface-Regular.ttf') format('truetype'),
+        url('/sb/fonts/SBSansInterface-Regular.svg#SBSansInterface-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SB Sans Display';
+    src: url('/sb/fonts/SBSansDisplay-Semibold.eot');
+    src: url('/sb/fonts/SBSansDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('/sb/fonts/SBSansDisplay-Semibold.woff2') format('woff2'),
+        url('/sb/fonts/SBSansDisplay-Semibold.woff') format('woff'),
+        url('/sb/fonts/SBSansDisplay-Semibold.ttf') format('truetype'),
+        url('/sb/fonts/SBSansDisplay-Semibold.svg#SBSansDisplay-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.b2bcabinet-navbar-2 {
+	align-items: center;
+}
+
+.b-sber-auth {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 9px 24px;
+	width: 237px;
+	height: 40px;
+	background: #107F8C;
+	border-radius: 30px;
+	cursor: pointer;
+	justify-content: center;
+}
+.b-sber-auth-wrap{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 8px;
+	width: 189px;
+	height: 22px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.b-sber-auth-text{
+	width: 159px;
+	height: 16px;
+	font-family: 'SB Sans Interface';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	flex: none;
+	order: 1;
+	align-self: center;
+	flex-grow: 0;
+}
+
+.b-sber-auth-icon {
+	width: 22px;
+	height: 22px;
+	flex: none;
+	order: 0;
+	align-self: flex-start;
+	flex-grow: 0;
+	background: url('/sb/svg/logo.svg') center no-repeat;
+	background-size: contain;
+}
+
+.b-sber-auth-loading {
+	display: none;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
+	width: 20px;
+	height: 20px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	background: url('/sb/svg/loading.svg') center no-repeat;
+	background-size: contain;
+	animation: 1s linear 0s normal none infinite running rot;
+	-webkit-animation: 1s linear 0s normal none infinite running rot;
+}
+
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.b-sber-auth:hover { background: #21A19A; }
+.b-sber-auth:active { background: #005E7F; cursor: grabbing; }
+.b-sber-auth.m-loading  { background: #107F8C; cursor: default; }
+.b-sber-auth.m-loading .b-sber-auth-loading{ display:flex;}
+.b-sber-auth.m-loading .b-sber-auth-wrap { display: none; }
+
+.b-sber-info {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 8px 12px;
+	gap: 12px;
+	width: 153px;
+	height: 48px;
+	background: #FFFFFF;
+	border: 1px solid #E4E8EB;
+	border-radius: 12px;
+}
+
+.b-sber-info.m-nolimit {
+	width: 115px;
+	height: 44px;
+	border: 0;
+}
+
+.b-sber-info-icon {
+	width: 22px;
+	height: 22px;
+	flex: none;
+	order: 0;
+	align-self: flex-start;
+	flex-grow: 0;
+	background: url('/sb/svg/logo1.svg') center no-repeat;
+	background-size: contain;
+	position: relative;
+	top: 3px;
+}
+.b-sber-info-text {  }
+.b-sber-info-text-first {
+	font-family: 'SB Sans Interface';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 16px;
+	text-align: right;
+	color: #565B62;
+	white-space: nowrap;
+}
+.b-sber-info-text-last {
+	font-family: 'SB Sans Interface';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: right;
+	color: #1F1F22;
+}
+.b-sber-info-link {
+	width: 57px;
+	height: 28px;
+	font-family: 'SB Sans Interface';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 14px;
+	color: #1358BF;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	display: inline-block;
+}
+
+body.m-spec .index_checkout-total { flex-wrap: wrap; justify-content: space-between !important; }
+body.m-spec .index_checkout .index_checkout-table_total .index_checkout-total .form-group.row { margin-left: 0 !important; }
+body.m-spec .index_checkout-total table { margin-right: 0 !important; } 
+
+@media screen and (max-width: 768px) {
+	body.m-spec .index_checkout-total_title h3 { display: inline-block; }
+}
+@media screen and (max-width: 540px) {
+	body.m-spec .index_checkout-total table tr { display: block }
+	body.m-spec .index_checkout-total table tr td { display: block; width: 100%; }
+}
+.previewModal { position: relative; z-index: 10000; }
+@media screen and (max-width: 435px) {
+	.b-sber-info { margin: 0 !important }
+}
+@media screen and (max-width: 373px) {
+	.b2bcabinet-navbar-2__user-wrap { padding-right: 0 !important }
+	.b2bcabinet-navbar-2 > .d-flex.flex-1.pl-3 { padding-left: 0 !important }
+	.b-sber-info { width: auto !important; padding-left: 5px !important;padding-right: 0 !important }
+}
